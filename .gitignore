@@ -7,3 +7,5 @@ mochawesome-report/
 /test/phantom-tests.js
 /test/selenium-fooling.js
 /test/word-count-fooling.js
+experiments/
+TestResults/
