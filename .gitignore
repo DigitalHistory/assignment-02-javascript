@@ -9,3 +9,5 @@ mochawesome-report/
 /test/word-count-fooling.js
 experiments/
 TestResults/
+node_modules_security_vuln/
+/package-lock-sec-vuln.json
