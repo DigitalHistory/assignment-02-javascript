@@ -85,6 +85,8 @@ P.S. -- you may find it useful or interesting to look at the script I used to ge
 ** Part 3: Reflection
 *If and only if you are aiming to achieve an A in the course*, you must also complete the Reflection section of the assignment. As before, copy the file [[./Reflection/reflection-template.md]] to ~Reflection/yourgithubid.md~, again replacing `yourgithubid` with your actual Github ID.  Follow the directions in the file. 
 
+** Tests
+As in our other assignments, this one conmes with a set of bundled tests designed to make your life a little easier.  To run them, first execute ~npnm install -d~ from this directory. Then run ~npm run test~ or, to watch the directory continuously, ~npm run watch~
 * Handing in
 
 As mentioned above: when you are finished -- when your code passes all the tests -- submit your code via pull request.  This is the only acceptable submission process!
