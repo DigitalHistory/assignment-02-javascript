@@ -42,20 +42,11 @@ if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   var exports = module.exports = {};
 }
 else {
-  var exports = window.link-ministers = {};
+  var exports = window.exports = {};
 }
 
 exports.addLink = addLink;
 exports.wikify = wikify;
 exports.linkifyClass = linkifyClass;
 exports.updatePage = updatePage;
-
-
-
-
-
-
-
-
-
 
