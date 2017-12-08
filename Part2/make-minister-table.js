@@ -132,27 +132,33 @@ var ministers = [{
 }];
 
 function buildTable(data) {
-    var table = document.createElement("table");
+  var table = document.createElement("table"),
+      fields = Object.keys(data[0]),
+      tablehead = document.createElement("thead"),
+      headRow = document.createElement("tr"),
+      caption=document.createElement('caption'),
+      accessText=document.createTextNode('Prime Ministers of Canada');
+  table.setAttribute('id','primeministers');
+  caption.appendChild(accessText);
+  table.appendChild(caption);
+  fields.forEach(function(field) {
+    var headCell = document.createElement("th");
+    headCell.textContent = field;
+    headRow.appendChild(headCell);
+  });
+  tablehead.appendChild(headRow);
+  table.appendChild(headRow);
 
-    var fields = Object.keys(data[0]);
-    var headRow = document.createElement("tr");
+  data.forEach(function(object) {
+    var row = document.createElement("tr");
     fields.forEach(function(field) {
-        var headCell = document.createElement("th");
-        headCell.textContent = field;
-        headRow.appendChild(headCell);
+      var cell = document.createElement("td");
+      cell.className = field;
+      cell.textContent = object[field];
+      if (typeof object[field] == "number")
+        cell.style.textAlign = "right";
+      row.appendChild(cell);
     });
-    table.appendChild(headRow);
-
-    data.forEach(function(object) {
-        var row = document.createElement("tr");
-        fields.forEach(function(field) {
-            var cell = document.createElement("td");
-            cell.className = field;
-            cell.textContent = object[field];
-            if (typeof object[field] == "number")
-                cell.style.textAlign = "right";
-            row.appendChild(cell);
-        });
         table.appendChild(row);
     });
 
