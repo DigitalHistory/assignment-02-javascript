@@ -18,7 +18,8 @@
 // - booleans are either true or false
 // - arrays are collections of values, usually written as [value0, value1, value2]
 // - objects are complex variables with internal structure.
-// Objects are quite a bit more complex than the other variable types and we will discuss them later.
+// Objects are quite a bit more complex than the other variable types and we will
+// discuss them later.
 
 
 // Problem 1
@@ -39,7 +40,7 @@ function greeting(name) {
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
   // var parting = "Goodbye, " + name + ".";
-  // but of course I actually want to say hello.
+  // (but of course, I actually want to say hello.)
 }
 
 // Problem 3
@@ -68,6 +69,8 @@ function splitArray (thisArray) {
 }
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
+// MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK
+// AND YOUR ASSIGNMENT TO FAIL!
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   var exports = module.exports = {};
 }

@@ -13,11 +13,11 @@
 //   profession: 'novelist' }
 
 function returnObject (first, last, prof) {
-  // it might be easiest here to declajre a variable
+  // it might be easiest here to declare a variable
   // var o = {};
   // and then add properties to it one by one
   // o.firstName = first
-  // etc
+  // etc.
   // don't forget to return the object
 }
 
@@ -30,9 +30,15 @@ function returnObject (first, last, prof) {
 // "firstName lastName was a profession"
 
 // so for instance, we could write
-// objectToSentence(returnObject("Italo", "Calvino", "novelist""))
+// objectToSentence({firstName : 'Italo', lastName : 'Calvino', profession : 'novelist'})
 // which would return
 // "Italo Calvino was a novelist."
+
+// Fun Fact:
+// note that the following would produce the same result:
+// objectToSentence(returnObject("Italo", "Calvino", "novelist""))
+// (hold that thought for later!)
+
 
 function objectToSentence (obj) {
   // remember you can refer to object properties using either of 2 methods
@@ -46,14 +52,14 @@ function objectToSentence (obj) {
 // Problem 3
 // Write a function that takes an object as a parameter. If the object
 // has a property "profession" with the value "novelist"
-// then it wrill return the sentence
+// then it will return the sentence
 // "object.firstName object.lastName was a writer."
 // otherwise it will return the sentence
 // "object.firstName object.lastName was not a writer."
 
 // so, if passed the parameter
 // { firstName:"Italo", lastName: "Calvino", profession: "novelist"}
-// it wil lreturn the now-familiar
+// it will return the now-familiar
 // "Italo Calvino was a writer."
 // but if passed
 // {firstName: "Frida", lastName:"Kahlo", profession:"artist"}
@@ -98,7 +104,7 @@ function stringIterator (aString, aNumber) {
 // Reconciliation before Celebration(150)
 
 function prettyIterator (aString, aNumber) {
-  // be sure to check your results o nthis one; it has a trick.
+  // be sure to check your results on this one; it has a trick.
 }
 
 
@@ -106,7 +112,7 @@ function prettyIterator (aString, aNumber) {
 // Problem 6
 // Write a function that, when passed an object 
 // with attributes "fullName", "from", and "to", returns the string
-// "object.PM's reign was N years long."
+// "object.fullName's reign was N years long."
 // where "N" is the difference between from and to.
 
 // so, if passed the parameter
