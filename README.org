@@ -7,7 +7,7 @@ You do not have to become a coder to do well in this course.  However, you /will
 
 * Expectations
 This assignment is graded pass/fail. You will only get credit if *all of your code runs as required.* To pass the assignment, you must:
-- successfully fork this repository and clone a local copy
+- successfully [[https://classroom.github.com/a/19n88aAV][copy this repository on github]] and clone a local copy
 - complete at least the first two parts of this assignment (plus the third part if you hope to get an A in the class), such that both the student-visible tests and the instructor/machine-visible tests all pass.
 - commit your work to git as you go, so that a query of the git history will show multiple steps. Please note that git commits are timestamped and unique; they are an excellent defense against accusations of cheating, so please use them extensively. Tests will fail unless you make at least 6 commits to the repository.
 - push all your changes to Github
