@@ -155,8 +155,8 @@ function buildTable(data) {
       var cell = document.createElement("td");
       cell.className = field;
       cell.textContent = object[field];
-      if (typeof object[field] == "number")
-        cell.style.textAlign = "right";
+      if (typeof object[field] === "number")
+      {cell.style.textAlign = "right"}
       row.appendChild(cell);
     });
         table.appendChild(row);

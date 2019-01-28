@@ -1,33 +1,39 @@
 // use this helper function to create <a> tags inside a given node
 function addLink(node, text, url) {
     // clear the node of text; create a new "a" node; add the appropriate attributes;
-    // append the new node as a child; return the original node.  
+    // append the new node as a child; return the original node.
     return node;
 }
 
 // another helper function, if you want to replace spaces w/ "_"
 function wikify(text) {
     // replace spaces w/ "_"; concatenate w/ Wikipedia prefix; return concatenated string
-    return;
+  return text;
 }
 
 
-// take a class name as parameter, and linkify all such classes.  
+// take a class name as parameter, and linkify all such classes.
 function linkifyClass (c) {
     // get all elements of class c; loop through elements;
     // add link to each element
-    
-    // no need for a return value. 
-}
+    var tableCells = document.getElementsByClassName(c);
+    for (node of tableCells) {
+      node.textContent = "...";
+      var url = wikify(node.textContent);
+      console.log ("the url is now: " + url);
+      addLink(node, node.textContent, url);
+    }
 
+    // no need for a return value.
+}
+linkifyClass("PM");
 // to actually do the work, we would call the function
 // linkifyClass("PM");
 
 // You can probably link all of the fields if you want:
 var classesToWikify = ["PM", "Party", "From", "To"];
 
-// what would you need to do next? Solution is left for the reader. 
-
+// what would you need to do next? Solution is left for the reader.
 // regardless, we'll create a meta-function that will be called when
 // index.html hs finished loading entirely
 
