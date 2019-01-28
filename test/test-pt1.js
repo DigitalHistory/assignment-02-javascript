@@ -102,11 +102,11 @@ describe('Part 1 Tests', function() {
                from: "1921",
                to: "1926"
              }],
-         solution = "Wilfred Laurier's reign was 15 years long.\n\
-Robert L. Borden's reign was 9 years long.\n\
-Arthur Meighen's reign was 1 years long.\n\
-William Lyon Mackenzie King's reign was 5 years long.\n\
-";
+             solution = `Wilfred Laurier's reign was 15 years long.
+Robert L. Borden's reign was 9 years long.
+Arthur Meighen's reign was 1 years long.
+William Lyon Mackenzie King's reign was 5 years long.`
+;
          assert.equal(ocl.sentences(ministers) , solution ,
                       "Watch for line breaks and punctuation." );
     });

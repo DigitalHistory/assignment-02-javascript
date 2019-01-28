@@ -25,7 +25,7 @@
 // Problem 1
 // write a function "hello" that always returns the string "Hello!"
 
-  function hello () {
+function hello () {
     // if you want you can declare a string variable first
     // or in this case you can just return the string directly
     // with something like "return 'Hello!'"

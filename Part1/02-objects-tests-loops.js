@@ -46,6 +46,7 @@ function objectToSentence (obj) {
   // or
   // obj.propertyname
   // note the quotes in the first version
+  return "RETURNVALUE";
 }
 
 
@@ -87,7 +88,6 @@ function stringIterator (aString, aNumber) {
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
-
 
 
 // Problem 5
