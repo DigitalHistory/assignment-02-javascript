@@ -1,6 +1,6 @@
 'use strict';
 
-const fs=require('fs'), gitConfig = require('git-config'), hwc=require('html-word-count');
+const fs=require('fs'), hwc=require('html-word-count');
 
 var chai=require('chai'),
     expect=chai.expect;

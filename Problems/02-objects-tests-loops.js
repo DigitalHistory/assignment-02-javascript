@@ -104,7 +104,7 @@ function stringIterator (aString, aNumber) {
 // Reconciliation before Celebration(150)
 
 function prettyIterator (aString, aNumber) {
-  // be sure to check your results on this one; it has a trick.
+  // be sure to check your results on this one; it has a trick. maybe 2. 
 }
 
 
@@ -157,6 +157,7 @@ function computeReign (pm) {
 // var ministers = [ {
 // fullName: "Wilfred Laurier",
 // party: "Liberal",
+
 // from: "1896",
 // to: "1911"
 // }, {
