@@ -19,33 +19,21 @@ Create your personal copy of this repository by [[https://classroom.github.com/a
 
 When your assignment passes all tests and you are satisfied with your work, *please be sure that you have also pushed all your commits to the repository*. This will ensure that I receive your work.
 
-* Resources
-There are many, many excellent JavScript resources on the web. I strongly recommend the [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript][MDN JavaScript Learning Pathway]]. For this assignment, you will want to read much of [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps][First steps]] and [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks][Building Blocks]]. I also have a very high opinion of  [[http://eloquentjavascript.net/][Eloquent Javascript]], but in past years students have often found it somewhat difficult. However, it rewards careful study, teaches excellent habits, and encourages creative thinking while coding. Both MDN and /EJ/ have built-in JS Consoles forexperimenting with code (see below).   
-
-MDN also has a more advanced guide to JavaScript which starts with [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript][the "reintroduction"]]. This can be worth consulting if you want more information. 
-
-* Consoles and Playgrounds
-
-Sometimes you will want to try out your code and test out your ideas before putting them in a permanent file. There are various tools for this. 
-- Browser consoles and scratchpads :: Your browser has a built-in "console" where you can enter javascript commands and see their output. See [[https://digitalhistory.github.io/dh-website/tools/setup/#web-browser][the Setup doc]] for more info.
-- node console :: Unfortunately, VSCode does not have a built-in javascript console. However, you can easily create one in a terminal window by running the command ~node~. Exit by typing ~Control-d~ or ~Control-c Control-c~ or ~.exit~.
-- VSCode Debugger :: VSCode has an excellent debugger. However, debugging is a complicated subject. If you want to try to use these tools, [[https://code.visualstudio.com/docs/editor/debugging][read the docs]]. 
-- VSCode extensions :: There are many excellent VSCode extensions for JavaScript. You can experiment with [[https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode][quokka]], for instance. 
-- Online Playgrounds :: These can be fantastic resources, but they make more sense for web-based programming.  
-
 * Details
 
 As you know, web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  In this assignment, we finally turn to Javascript, a.k.a. "the fun part".   
+
+*Please make use of the Javascript resources which can be found [[https://digitalhistory.github.io/dh-website/tools/js-resources-tools/][in the  Tools section of the website]].*  For this assignment, you will certainly want to read much of [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps][First steps]] and [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks][Building Blocks]] in MDN, and will benefit from exploring further.
 
 ** Part 1 - Javascript in the Console  
 
 Let me stress this strongly: you can try to do this assignment without the resources above, but it will be *much, much harder*. 
 
-Once you have read the textbook and done the exercises, you should find this part of the assignment very straightforward. Complete the code in [[./Part1/01-functions-and-variables.js]]  and [[./Part1/02-objects-tests-loops.js]] according to the instruction-comments in those file.  Check your code by testing it in the [[http://eloquentjavascript.net/code/][EJ code sandbox]], [[https://developer.mozilla.org/en/docs/Tools/Scratchpad][Firefox Scratchpad]], the [[https://developers.google.com/web/tools/chrome-devtools/debug/console/][Chrome console]], etc.  I have also written tests for you which will produce the appropriate output when your code is correct.  
+Once you have read the MDN resources and attempted the exercises there. , you should find this part of the assignment very straightforward. Complete the code in [[./Problems/01-functions-and-variables.js]]  and [[./Problems/02-objects-tests-loops.js]] according to the instruction-comments in those file.  Check your code by testing it in the [[http://eloquentjavascript.net/code/][EJ code sandbox]], [[https://developer.mozilla.org/en/docs/Tools/Scratchpad][Firefox Scratchpad]], the [[https://developers.google.com/web/tools/chrome-devtools/debug/console/][Chrome console]], etc.  I have also written tests for you which will produce the appropriate output when your code is correct.  
 
 
 ** Part 2: Reflection
 *If and only if you are aiming to achieve an A in the course*, you must also complete the Reflection section of the assignment.  I'm simplifying things a bit this time -- no need to copy or rename a file. Simply answer the questions in ~Reflection/reflection.md~.  Follow the directions in the file. 
 
 ** Tests
-As in our other assignments, this one conmes with a set of bundled tests designed to make your life a little easier.  To run them, first execute ~npm install -d~ from this directory. Then run ~npm run test~ or, to watch the directory continuously, ~npm run watch~
+As in our other assignments, this one conmes with a set of bundled tests designed to make your life a little easier. Hopefully these work a bit better than the last set (they were much simpler to write, so I think they will work just fine).  To run them, first execute ~npm install~ from this directory. Then run ~npm test~ or, to watch the directory continuously, ~npm run watch~
