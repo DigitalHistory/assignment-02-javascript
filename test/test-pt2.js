@@ -17,12 +17,12 @@ chai.use(require('chai-fs'));
 describe('Reflection Checks (not required unless you are attempting an "A" grade!)', function() {
   it('Reflection file should exist', function() {
     //let r = `Reflection/${githubid}.md`;
-    let r = `Reflection/reflection.md`;
-    expect(r, `I can't find the file ${r}`).to.be.a.file();
+    let r = 'Reflection/reflection.md';
+    expect(r).to.be.a.file(`I can't find the file ${r}`);
   });
-  it('The total word count for your reflection should be at least 625', function() {
+  it('The total word count for your reflection should be at least 440', function() {
     //let content=fs.readFileSync(`Reflection/${githubid}.md`, 'utf-8');
-    let content=fs.readFileSync(`Reflection/reflection.md``, 'utf-8');
-    expect(hwc(content), "").to.be.at.least(625);
+    let content=fs.readFileSync('Reflection/reflection.md', 'utf-8');
+    expect(hwc(content), '').to.be.at.least(440);
   });
 });
