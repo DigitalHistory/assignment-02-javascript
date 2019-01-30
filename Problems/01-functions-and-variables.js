@@ -1,4 +1,4 @@
- // In this exercise we practice using variables and pasisng them
+// In this exercise we practice using variables and pasisng them
 // to functions (as parameters) and from functions (as return values)
 
 // in JS we work with several kinds of variables.
@@ -26,10 +26,10 @@
 // write a function "hello" that always returns the string "Hello!"
 
 function hello () {
-    // if you want you can declare a string variable first
-    // or in this case you can just return the string directly
-    // with something like "return 'Hello!'"
-  }
+  // if you want you can declare a string variable first
+  // or in this case you can just return the string directly
+  // with something like "return 'Hello!'"
+}
 
 // Problem 2
 // Improve your initial function by accepting a parameter
@@ -68,17 +68,61 @@ function splitArray (thisArray) {
 
 }
 
+// Problem 5
+// A. Write a simple function that takes two arguments.  Subtact the second number from the first.
+// Return the result
+function subtract(number1, number2) {
+  // subtract number2 from number1, and return the result.
+}
+
+
+//B. Write a slightly more complex number that only performs the subtraction after testing to be
+// sure that both parameters are numbers. If so, return the result. If not, return the string
+// "I can only subtract numbers."
+
+function carefulSubtract (first, second) {
+  // test to be sure that both first and second are numbers.
+  // if so, return the result. Otherwise, return the string
+  // "I can only subtract numbers."
+  return first - second;
+}
+
+
+
+// Problem 6
+// Write a simple function that does the following:
+// if the parameter is a string, return the string followed by the additional text " yay!"
+// if the parameter is a number, return the *square* of the number
+// if the parameter is null, return the string "sorry, I can't do anything with a null value."
+// for any other type, return "I don't know how to use that kind of variable."
+function typeTester (unknown) {
+  // use an if/else construction, a switch/case , or any other branching logic. Remember to
+  // return a value. 
+}
+
+
+
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 // MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK
 // AND YOUR ASSIGNMENT TO FAIL!
+var exports;
+
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-  var exports = module.exports = {};
+  exports = module.exports = {};
 }
 else {
-  var exports = window.skeleton = {};
+  exports = window.skeleton = {};
 }
 
-exports.hello = hello;
-exports.greeting = greeting;
-exports.returnArray = returnArray;
-exports.splitArray = splitArray;
+let functions = [hello, greeting, returnArray, splitArray,
+  subtract, carefulSubtract, typeTester];
+
+for (let i in functions) {
+  exports[functions[i].name] = functions[i]; // get the name as string first!
+}
+
+// console.log(exports);
+// exports.hello = hello;
+// exports.greeting = greeting;
+// exports.returnArray = returnArray;
+// exports.splitArray = splitArray;
