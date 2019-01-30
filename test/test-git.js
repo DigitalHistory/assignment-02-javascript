@@ -1,11 +1,14 @@
 'use strict';
 
 const path = require('path');
-const gitCommits = require('git-commits'), fs=require('fs'), 
-      gitConfig = require('git-config'),  gitState = require('git-state');
+const gitCommits = require('git-commits'),
+      // fs=require('fs'), 
+      //gitConfig = require('git-config'),
+      // gitConfig = require('gitconfig'),
+      gitState = require('git-state');
       
 var repoPath = path.resolve(process.env.REPO || (__dirname + '/../.git'));
-var ignoreCommitEmails = "matt.price@utoronto.ca";
+var ignoreCommitEmails = 'matt.price@utoronto.ca';
 const matchesProfEmail = function (email, profEmails) {
   return (profEmails.indexOf(email) > -1);
 };
@@ -17,15 +20,7 @@ var chai=require('chai'),
 chai.use(require('chai-fs'));
 
 
-var name,email,githubid;
 
-gitConfig(function (err, config) {
-  if (err) return done(err);
-  if (config.user.name) {name = config.user.name;}
-  if (config.user.email) {email = config.user.email;}
-  if (config.github.user) {githubid = config.github.user;}
-  
-});
 /////////////////////////////
 ///
 ///  tests start here
@@ -53,7 +48,7 @@ describe('Git Checks', function() {
     done();
   });
 
-  it('You should have made at least ' + minCommits + " git commits ", function() {
+  it('You should have made at least ' + minCommits + ' git commits ', function() {
     expect(studentCommits).to.be.at.least(minCommits);
   });
 
@@ -65,11 +60,11 @@ describe('Git Checks', function() {
   // });
 
   it('All changes in current directory should be committed to Git (OK for this to fail while you are still working)', function() {
-    expect(gitCheck.dirty, "looks like you have changed some files and not committed the changes yet").to.equal(0);
+    expect(gitCheck.dirty, 'looks like you have changed some files and not committed the changes yet').to.equal(0);
   });
 
   it('All files in current directory should be committed to Git (OK for this to fail while you are still working)', function() {
-    expect(gitCheck.untracked, "looks like you have some files in the directory which have not been added to the repository. \n      Make sure your answers do not rely on them, or tests will fail on the server.").to.equal(0);
+    expect(gitCheck.untracked, 'looks like you have some files in the directory which have not been added to the repository. \n      Make sure your answers do not rely on them, or tests will fail on the server.').to.equal(0);
 
   });
 });
