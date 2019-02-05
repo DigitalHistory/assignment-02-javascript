@@ -15,7 +15,7 @@ This assignment is graded pass/fail. You will only get credit if *all of your co
 
 * Checking Out And Handing In the Assignment
 
-Create your personal copy of this repository by [[https://classroom.github.com/a/19n88aAV][following this link]]. The new repository will appear at the URL https://github.com/DigitalHistory/02-loops-conds-objects-YOURGITHUBID (as always, replace with your own github ID!).  Clone this new repository locally via the "Clone or Download" process discussed in [[https://github.com/DigitalHistory/assignment-00-git-and-github/][your first assignment]] and also [[https://help.github.com/articles/cloning-a-repository/][described here]], and do your work in VSCode. 
+Create your personal copy of this repository by [[https://classroom.github.com/a/oqxwq0a3][following this link]]. The new repository will appear at the URL https://github.com/DigitalHistory/02-loops-conds-objects-YOURGITHUBID (as always, replace with your own github ID!).  Clone this new repository locally via the "Clone or Download" process discussed in [[https://github.com/DigitalHistory/assignment-00-git-and-github/][your first assignment]] and also [[https://help.github.com/articles/cloning-a-repository/][described here]], and do your work in VSCode. 
 
 When your assignment passes all tests and you are satisfied with your work, *please be sure that you have also pushed all your commits to the repository*. This will ensure that I receive your work.
 
