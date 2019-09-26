@@ -12,6 +12,13 @@
 //   lastName  : 'Calvino',
 //   profession: 'novelist' }
 
+/**
+ * construct an object using the three inputs FIRST, LAST, and PROF
+ * @param {string} first
+ * @param {string} last
+ * @param {string} prof
+ * @returns {object} should have the properties FIRSTNAME, LASTNAME, and PROFESSION
+ */
 function returnObject (first, last, prof) {
   // it might be easiest here to declare a variable
   // var o = {};
@@ -40,13 +47,21 @@ function returnObject (first, last, prof) {
 // (hold that thought for later!)
 
 
+/**
+ * construct a sentence from the name and profession of the person represented by OBJ
+ * @param {object} obj 
+ * @param {string} obj.firstName - first name of the represented person
+ * @param {string} obj.lastName - last name of the represented person
+ * @param {string} obj.profession - profession of that person
+ * @returns {string} a sentence constructed from the object parameters 
+ */
 function objectToSentence (obj) {
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
   // obj.propertyname
   // note the quotes in the first version
-  return "RETURNVALUE";
+  return 'RETURNVALUE';
 }
 
 
@@ -67,6 +82,15 @@ function objectToSentence (obj) {
 // it will return
 // "Frida Kahlo was not a writer."
 
+/**
+ * use OBJ.PROFESSION to construct a sentence telling us whether or not a
+ * person was a writer
+ * @param {} obj
+ * @param {string} obj.firstName - first name of the represented person
+ * @param {string} obj.lastName - last name of the represented person
+ * @param {string} obj.profession - profession of that person
+ * @returns {string} a sentence constructed from the object parameters
+ */
 function wasWriter (obj) {
   // in an if/else statement
   // it is acceptable to put the
@@ -84,6 +108,12 @@ function wasWriter (obj) {
 // it will return
 // "Oh Canada!Oh Canada!Oh Canada!Oh Canada!Oh Canada!"
 
+/**
+ * repeat ASTRING ANUMBER times, and return
+ * @param {string} aString
+ * @param {number} aNumber
+ * @returns {string}
+ */
 function stringIterator (aString, aNumber) {
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
@@ -103,6 +133,13 @@ function stringIterator (aString, aNumber) {
 // ...
 // Reconciliation before Celebration(150)
 
+/**
+ * return ASTRING iterated ANUMBER times on separate lines, with each line ending in a number from 
+ * from 1 to ANUMBER
+ * @param {string} aString
+ * @param {number} aNumber
+ * @returns   {string}
+ */
 function prettyIterator (aString, aNumber) {
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
@@ -132,11 +169,20 @@ function prettyIterator (aString, aNumber) {
 // var willy = {
 //    fullName : "Wilfred Laurier",
 //    party    : "Liberal",
-//    from     : "1896",
-//    to       : "1911"
+//    from     : 1896,
+//    to       : 1911
 // }
 // computeReign (willy);
 
+/**
+ * 
+ * @param {object} pm
+ * @param  {string} pm.fullName
+ * @param {string} pm.party
+ * @param {number} pm.from
+ * @param {number} pm.toparty
+ * @returns {string} 
+ */
 function computeReign (pm) {
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
@@ -157,7 +203,6 @@ function computeReign (pm) {
 // var ministers = [ {
 // fullName: "Wilfred Laurier",
 // party: "Liberal",
-
 // from: "1896",
 // to: "1911"
 // }, {
@@ -186,6 +231,13 @@ function computeReign (pm) {
 //   William Lyon Mackenzie King's reign was 5 years long.
 //
 
+/**
+ * return a group of sentences written on separate lines.
+ * @param {Array} list - each element of this array should be an
+ * object with properties `fullName`, `party`,`from`, and `to`
+ * @returns {String} a set of sentences, each on its own line, constructed from
+ *  the properties of the individual objects comprising `list`
+ */
 function sentences(list) {
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
