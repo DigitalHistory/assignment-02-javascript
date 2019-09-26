@@ -23,7 +23,7 @@ When your assignment passes all tests and you are satisfied with your work, *ple
 
 As you know, web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  In this assignment, we finally turn to Javascript, a.k.a. "the fun part".   
 
-*Please make use of the Javascript resources which can be found [[https://digitalhistory.github.io/dh-website/tools/js-resources-tools/][in the  Tools section of the website]].*  For this assignment, you will certainly want to read much of [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps][First steps]] and [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks][Building Blocks]] in MDN, and will benefit from exploring further.
+*Please make use of the Javascript resources which can be found [[https://digitalhistory.github.io/dh-website/js-resources-tools/][in the  Tools section of the website]].*  For this assignment, you will certainly want to read much of [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps][First steps]] and [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks][Building Blocks]] in MDN, and will benefit from exploring further.
 
 ** Part 1 - Javascript in the Console  
 
@@ -31,9 +31,8 @@ Let me stress this strongly: you can try to do this assignment without the resou
 
 Once you have read the MDN resources and attempted the exercises there. , you should find this part of the assignment very straightforward. Complete the code in [[./Problems/01-functions-and-variables.js]]  and [[./Problems/02-objects-tests-loops.js]] according to the instruction-comments in those file.  Check your code by testing it in the [[https://developer.mozilla.org/en/docs/Tools/Scratchpad][Firefox Scratchpad]], the [[https://developers.google.com/web/tools/chrome-devtools/debug/console/][Chrome console]], etc.  I have also written tests for you which will produce the appropriate output when your code is correct.  
 
-
 ** Part 2: Reflection
 *If and only if you are aiming to achieve an A in the course*, you must also complete the Reflection section of the assignment.  I'm simplifying things a bit this time -- no need to copy or rename a file. Simply answer the questions in ~Reflection/reflection.md~.  Follow the directions in the file. 
 
 ** Tests
-As in our other assignments, this one conmes with a set of bundled tests designed to make your life a little easier. Hopefully these work a bit better than the last set (they were much simpler to write, so I think they will work just fine).  To run them, first execute ~npm install~ from this directory. Then run ~npm test~ or, to watch the directory continuously, ~npm run watch~
+As in our other assignments, this one conmes with a set of bundled tests designed to make your life a little easier. Hopefully these work a bit better than the last set (they were much simpler to write, so I think they will work just fine).  To run them, first execute ~npm install~ from this directory. Then run ~npm test~ or, to watch the directory continuously, ~npm run watch~. 
