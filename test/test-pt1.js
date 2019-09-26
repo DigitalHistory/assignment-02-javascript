@@ -87,9 +87,11 @@ describe('Part 1 Tests', function() {
     });
 
     it('function "objectToSentence" should convert an object to a sentence', function() {
-      let jh = {firstName : 'John', lastName : 'Hewitt', profession: 'cooper'};
+      let jh = {firstName : 'John', lastName : 'Hewitt', profession: 'cooper'},
+          ff = {firstName: 'Frantz', lastName : 'Fanon', profession: 'psychiatrist'};
 
       assert.equal(ocl.objectToSentence(jh), 'John Hewitt was a cooper.' );
+      assert.equal(ocl.objectToSentence(ff), 'Frantz Fanon was a psychiatrist.' );
     });
 
     it('function "wasWriter" should call you a writer if you ar a novelist, or not a writer if you are not.', function() {
