@@ -60,7 +60,8 @@ function objectToSentence (obj) {
   // obj['propertyname']
   // or
   // obj.propertyname
-  // note the quotes in the first version
+  // note the quotes in the first options
+  // also note: you need to change this next line!!
   return 'RETURNVALUE';
 }
 
