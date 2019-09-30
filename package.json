@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/DigitalHistory/02-javascript-assignment/#readme",
   "dependencies": {
-    "brfs": "^1.4.3",
     "chai": "^4.1.2",
     "git-config": "0.0.7",
     "mocha": "^4.0.1"
