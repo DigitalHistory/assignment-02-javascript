@@ -112,7 +112,7 @@ function carefulSubtract (first, second) {
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
-  return first - second;
+
 }
 
 
@@ -138,7 +138,7 @@ function typeTester (unknown) {
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 // MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK
 // AND YOUR ASSIGNMENT TO FAIL!
-let exports;
+var exports;
 
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   exports = module.exports = {};
