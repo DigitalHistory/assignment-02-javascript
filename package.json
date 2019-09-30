@@ -28,7 +28,7 @@
     "chai": "^4.1.2",
     "git-config": "0.0.7",
     "inline-css": "^2.2.3",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.1",
     "jsdom": "^11.5.1",
     "jshint": "^2.9.5",
     "mocha": "^4.0.1"
