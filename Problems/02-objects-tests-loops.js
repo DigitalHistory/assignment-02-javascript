@@ -14,10 +14,10 @@
 
 /**
  * construct an object using the three inputs FIRST, LAST, and PROF
- * @param {string} first
- * @param {string} last
- * @param {string} prof
- * @returns {object} should have the properties FIRSTNAME, LASTNAME, and PROFESSION
+ * @param {string} firstName
+ * @param {string} lastName
+ * @param {string} professor
+ * @returns {object} should have the properties firstName, lastName, and profession
  */
 function returnObject (first, last, prof) {
   // it might be easiest here to declare a variable
