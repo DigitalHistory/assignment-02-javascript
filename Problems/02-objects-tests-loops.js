@@ -181,7 +181,7 @@ function prettyIterator (aString, aNumber) {
  * @param  {string} pm.fullName
  * @param {string} pm.party
  * @param {number} pm.from
- * @param {number} pm.toparty
+ * @param {number} pm.to
  * @returns {string} 
  */
 function computeReign (pm) {
