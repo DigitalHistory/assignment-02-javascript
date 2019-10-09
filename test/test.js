@@ -121,7 +121,7 @@ describe('Part 1 Tests', function() {
       assert.equal(fns.hello(), 'Hello!',
         'Check to make sure you are returning the right string.');
     });
-    it('function "greeting("Ms. Atwood")" should return "Hello, Ms. Atwood.', function() {
+    it('function "greeting("Ms. Atwood")" should return "Hello, Ms. Atwood!', function() {
       assert.equal(fns.greeting('Ms. Atwood'), 'Hello, Ms. Atwood!',
         'Check to make sure you have combined the strings and variables properly.');
     });
