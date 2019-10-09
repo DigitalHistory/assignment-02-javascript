@@ -16,7 +16,7 @@
  * construct an object using the three inputs FIRST, LAST, and PROF
  * @param {string} firstName
  * @param {string} lastName
- * @param {string} professor
+ * @param {string} profession
  * @returns {object} should have the properties firstName, lastName, and profession
  */
 function returnObject (first, last, prof) {

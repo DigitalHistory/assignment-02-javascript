@@ -121,7 +121,7 @@ function carefulSubtract (first, second) {
 // Write a simple function that does the following:
 // if the parameter is a string, return the string followed by the additional text " yay!"
 // if the parameter is a number, return the *square* of the number
-// if the parameter is undefined, return the string "sorry, I can't do anything with a undefined value."
+// if the parameter is undefined, return the string "sorry, I can't do anything with an undefined value."
 // for any other type, return "I don't know how to use that kind of variable."
 /**
  * identify the type of UNKNOWN
