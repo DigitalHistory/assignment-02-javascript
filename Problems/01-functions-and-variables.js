@@ -49,7 +49,7 @@ function greeting(name) {
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
-  // let parting = "Goodbye, " + name + ".";
+  // let parting = "Goodbye, " + name + "!";
   // (but of course, I actually want to say hello.)
 }
 
