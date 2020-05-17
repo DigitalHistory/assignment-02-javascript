@@ -7,7 +7,7 @@ You do not have to become a coder to do well in this course.  However, you /will
 
 * Expectations
 This assignment is graded pass/fail. You will only get credit if *all of your code runs as required.* To pass the assignment, you must:
-- successfully [[https://classroom.github.com/a/M4HMIiOP][copy this repository via github classroom]] and clone a local copy
+- successfully copy this repository via github classroom and clone a local copy
 - complete at least the first part of this assignment (plus the second part if you hope to get an A in the class), such that both the student-visible tests and the instructor/machine-visible tests all pass.
 - commit your work to git as you go, so that a query of the git history will show multiple steps. Please note that git commits are timestamped and unique; they are an excellent defense against accusations of cheating, so please use them extensively. Tests will fail unless you make at least 6 commits to the repository.
 - push all your changes to Github
@@ -15,7 +15,7 @@ This assignment is graded pass/fail. You will only get credit if *all of your co
 
 * Checking Out And Handing In the Assignment
 
-Create your personal copy of this repository by [[https://classroom.github.com/a/M4HMIiOP][following this link]]. The new repository will appear at the URL https://github.com/DH20199/02-loops-conds-objects-YOURGITHUBID (as always, replace with your own github ID!).  Clone this new repository locally via the "Clone or Download" process discussed in [[https://github.com/DigitalHistory/assignment-00-git-and-github/][your first assignment]] and also [[https://help.github.com/articles/cloning-a-repository/][described here]], and do your work in VSCode. 
+Create your personal copy of this repository as you have done before, following the link given to you via announcement and using the resultant forked repository in our github classroom. The name of the new repository *should terminate in your github id*; please confirm that's the case! 
 
 When your assignment passes all tests and you are satisfied with your work, *please be sure that you have also pushed all your commits to the repository*. This will ensure that I receive your work.
 
