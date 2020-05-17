@@ -182,7 +182,7 @@ describe('Part 1 Tests', function() {
     it('function "typeTester" should return different responses for different variable types.', function () {
       expect(fns.typeTester('This test passes --')).to.equal('This test passes -- yay!') &&
         expect(fns.typeTester(99)).to.equal(99*99) &&
-        expect(fns.typeTester(undefined)).to.equal('Sorry, I can\'t do anything with an undefined value.') &&
+        expect(fns.typeTester(undefined)).to.equal('sorry, I can\'t do anything with an undefined value.') &&
         expect(fns.typeTester({name: 'none:'})).to.equal('I don\'t know how to use that kind of variable.');
     });
 
