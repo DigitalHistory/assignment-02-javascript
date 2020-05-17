@@ -70,6 +70,24 @@ gitConfig(function (err, config) {
 ////////////////////////////
 // var name,email,githubid;
 
+// feels like tihis should go in a 'before' but that does seem to work...  
+let authorString, sentenceArray;
+let allAuthors = ["Ms. Atwood", "Ms. Morrison", "Mr. Calvino", "Mr. Baldwin",
+                  "Mr. Achebe", "Mr. Joyce", "Ms. Wolff"],
+    allArrays = [
+      ["Tim", "Horton", "Donut"],
+      ["Nelson", "Mandela", "Politician"],
+      ["Georgia", "O'Keefe", "Artist"],
+      ["Che", "Guevara", "Revolutionary"]
+    ]
+let a = Math.floor(Math.random() * allAuthors.length),
+    s = Math.floor(Math.random() * allArrays.length);
+authorString = allAuthors[a];
+sentenceArray = allArrays[s]
+before(() => {
+});
+
+
 describe('Git Checks', function() {
   let gitCheck;
   before(function(done) {
@@ -115,22 +133,29 @@ describe('Git Checks', function() {
 });
 
 describe('Part 1 Tests', function() {
-
   describe('01: Variables and Functions', function() {
     it('function "hello" should return "Hello!"', function() {
       assert.equal(fns.hello(), 'Hello!',
         'Check to make sure you are returning the right string.');
     });
-    it('function "greeting("Ms. Atwood")" should return "Hello, Ms. Atwood!', function() {
-      assert.equal(fns.greeting('Ms. Atwood'), 'Hello, Ms. Atwood!',
-        'Check to make sure you have combined the strings and variables properly.');
+    it(`function "for any string, greeting("Some string")" should return "Hello, Some string!"`, function() {
+      let allAuthors = ["Ms. Atwood", "Ms. Morrison", "Mr. Calvino", "Mr. Baldwin",
+                        "Mr. Achebe", "Mr. Joyce", "Ms. Wolff"];
+      for (a of allAuthors) {
+        assert.equal(fns.greeting(a), `Hello, ${a}!`,
+                     'Check to make sure you have combined the strings and variables properly.')
+      }
     });
     it('function "returnArray" should combine three input parameters into an array.', function() {
       assert.deepEqual(fns.returnArray ('Tim', 'Horton', 'Donuts'), ['Tim', 'Horton', 'Donuts']);
+      assert.deepEqual(fns.returnArray ('John', 'Little', 'Merry Man'), ['John', 'Little', 'Merry Man'],
+                      `Are you sure you're not setting the return value statically?`);
     });
-    it('function "splitArray" should return a sentence like "Tim Horton was a Donut."', function() {
+    it('function "splitArray" should return a sentence like "Tim Horton was a Donut." (but plugging in the appropriate values)', function() {
       assert.equal(fns.splitArray (['Tim', 'Horton', 'Donut']), 'Tim Horton was a Donut.',
-        'Ohh, that\'s not as delicious as I expected.');
+                   'Ohh, that\'s not as delicious as I expected.');
+      assert.equal(fns.splitArray (['Venus', 'Williams', 'tennis player']), 'Venus Williams was a tennis player.',
+                   `Are you sure you're not setting the return value statically?`);
     });
 
     it('function "subtract" should return the difference of the first and second parameters.', function () {
@@ -167,7 +192,11 @@ describe('Part 1 Tests', function() {
 
     it('function "returnObject" should convert a set of parameters into an object', function() {
       assert.deepEqual(ocl.returnObject ('Elijah', 'Harper', 'Canadian politician'),
-        {firstName: 'Elijah', lastName: 'Harper', profession: 'Canadian politician'});
+                       {firstName: 'Elijah', lastName: 'Harper', profession: 'Canadian politician'});
+      assert.deepEqual(ocl.returnObject ('Charles', 'Darwin', 'country parson'),
+                       {firstName: 'Charles', lastName: 'Darwin', profession: 'country parson'},
+                      `Are you sure you're not setting the return value statically?`);
+
     });
 
     it('function "objectToSentence" should convert an object to a sentence', function() {
@@ -200,9 +229,13 @@ describe('Part 1 Tests', function() {
 
     it('function "computeReign" should give the length of an object' + '\'' + 's reign', function() {
       let louis = {fullName : 'Louis Riel', party : 'Métis National Committee', from : 1869, to : 1870},
-          sentence = 'Louis Riel\'s reign was 1 years long.';
+          sentence = 'Louis Riel\'s reign was 1 years long.',
+          campbell = {fullName : 'Kim Campbell', party : 'Progressive Conservative Party', from : 1993, to : 1993},
+          sentence2 = 'Kim Campbell\'s reign was 0 years long.';
       assert.equal(ocl.computeReign(louis) , sentence ,
-        'Check your punctuation and other details' );
+                   'Check your punctuation and other details' );
+      assert.equal(ocl.computeReign(campbell) , sentence2 ,
+                   `Are you sure you're not setting the return value statically?`);
     });
 
     it('function "sentences" should return a set of sentences, separated by line breaks.',
